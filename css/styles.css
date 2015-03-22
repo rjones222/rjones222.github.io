@@ -63,8 +63,9 @@ header span {
     z-index: 50;
     float: left;
     clear: both;
-    width: 430px;
-    height: 305px;
+    width: 80%;
+    /*width: 430px;
+    height: 305px;*/
     margin: -180px 0 0 0;
     padding: 35px 35px 15px 35px;
     overflow: hidden;
