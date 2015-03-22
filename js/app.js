@@ -4,7 +4,11 @@ angular.module('website', ['ngAnimate'])
         $scope.pages = {
             'home': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Home', content: 'This is page content.' },
             'about': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'About', content: 'This is page content.' },
-            'contact': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Contact', content: 'This is page content.' }
+            'contact': {
+                label: 'Rick W. Jones | Front End / UI Developer',
+                sublabel: 'Contact',
+                content: '<a href="mailto:rick@rickwjones.com">rick@rickwjones.com</a><br>(424) 212-1201'
+            }
         };
 
 //        keeping track of the current page, set initiallly to home
@@ -112,5 +116,9 @@ angular.module('website', ['ngAnimate'])
                 }
             }
         };
+    })
+    .filter('unsafe', function($sce) {
+        return function(val) {
+            return $sce.trustAsHtml(val);
+        };
     });
-

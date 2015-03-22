@@ -19,7 +19,7 @@
     <div>
         <h1 class="blue">{{page.label}}</h1>
         <h3>{{page.sublabel}}</h3>
-        <p>{{page.content}}</p>
+        <p ng-bind-html="page.content | unsafe"></p>
     </div>
 </div>
 
