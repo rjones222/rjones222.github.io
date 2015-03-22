@@ -2,9 +2,9 @@ angular.module('website', ['ngAnimate'])
     .controller('MainCtrl', function ($scope) {
 //        defining a pages object
         $scope.pages = {
-            'home': { label: 'Home', sublabel: 'Sublabel', content: 'This is page content.' },
-            'about': { label: 'About', sublabel: 'Sublabel', content: 'This is page content.' },
-            'contact': { label: 'Contact', sublabel: 'Sublabel', content: 'This is page content.' }
+            'home': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Home', content: 'This is page content.' },
+            'about': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'About', content: 'This is page content.' },
+            'contact': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Contact', content: 'This is page content.' }
         };
 
 //        keeping track of the current page, set initiallly to home

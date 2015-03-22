@@ -8,7 +8,7 @@ body {
     overflow: hidden;
 }
 
-header {
+/*header {
     position: absolute;
     top: 35px;
     left: 35px;
@@ -20,7 +20,7 @@ header span {
     font-size: 30px;
     font-weight: bold;
     text-shadow: 1px 1px 2px #FAFCFF;
-}
+}*/
 
 .fullBg {
     position: fixed;
