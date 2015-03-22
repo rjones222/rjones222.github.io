@@ -42,7 +42,7 @@ header span {
 }*/
 
 .well {
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(255, 255, 255, 0.5);
     border: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
