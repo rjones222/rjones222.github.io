@@ -1,1 +1,27 @@
+.idea
+.htaccess
+.project
+.ruby-version
+.ruby-gemset
+.settings/
+.idea/*
+
+.DS_Store
+
+#compass stuff
 .sass-cache
+config/.sass-cache/
+config/cubes.*
+
+# ignore hashed styles
+#saatchionline/public/styles/*-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].css
+
+#grunt stuff
+.grunt
+
+node_modules
+*.sassc
+/bin
+log/
+_site
+
