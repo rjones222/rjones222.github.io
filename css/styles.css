@@ -1,5 +1,18 @@
 body {
+    font-family: 'Lato', sans-serif;
     overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    z-index: 1000;
+}
+
+header span {
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #FAFCFF;
 }
 
 .fullBg {
