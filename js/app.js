@@ -1,5 +1,3 @@
-document.getElementByTagName('body').innerHTML = "";
-
 angular.module('website', ['ngAnimate', 'ngRoute'])
     .controller('MainCtrl', function ($scope) {
 //        defining a pages object
