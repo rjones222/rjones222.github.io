@@ -100,7 +100,8 @@ header span {
 }
 
 #content {
-    height: 80%;
+    height: 162px;
+    overflow: scroll;
 }
 
 .portfolio-item {
