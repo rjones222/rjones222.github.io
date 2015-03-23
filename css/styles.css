@@ -87,7 +87,7 @@ header span {
     /*width: 430px;
     height: 305px;*/
     margin: -180px 0 0 0;
-    max-width: 694px;
+    max-width: 695px;
     padding: 35px 35px 15px 35px;
     overflow: hidden;
     background: #ffffff;
@@ -99,11 +99,15 @@ header span {
     color: #0088cc;
 }
 
+#content {
+    height: 80%;
+}
+
 .portfolio-item {
     float: left;
-    width: 23.40425531914894%;
+    width: 30.4%;
     height: 150px;
-    margin: 0 2.127659574468085% 20px 0;
+    margin: 0 20px 20px 0;
     position: relative;
     overflow: hidden;
 }
