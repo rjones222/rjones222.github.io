@@ -16,9 +16,13 @@
 
 </head>
 
-<script>document.getElementsByTagName('body').innerHTML = "";</script>
+<script>
+    
+    document.getElementsById('main').innerHTML = "";
 
-<body ng-controller="MainCtrl">
+</script>
+
+<body id="main" ng-controller="MainCtrl">
 
     <!--<img bg class="fullBg bg-animation" ng-if="isCurrentPage('home')" src="images/bkgd000.jpg">-->
     <img bg class="fullBg bg-animation" ng-if="isCurrentPage('about')" src="images/bkgd001.jpg">
