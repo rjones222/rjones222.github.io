@@ -7,7 +7,7 @@
         <div id="post-8" class="portfolio-item post-1 odd category-2013">
 
 
-            <a ng-click="showAHCDetails" title="MARS: American Heritage Chocolate"><img
+            <a ng-click="showAHCDetails = ! showAHCDetails" title="MARS: American Heritage Chocolate"><img
                     src="http://rickwjones.com/wp/wp-content/uploads/2013/05/AHC-timeline-screencap1-220x150.jpg"
                     alt="Parallax scrolling timeline" class="archive-thumbnail featured"></a>
 
@@ -182,7 +182,7 @@
 
 </div>
 
-<div class="check-element animate-show" ng-class="{ 'hidden': ! showAHCDetails }" style="position:absolute; top: 20px; left: 10%; width: 90%; z-index: 1000;">
+<div class="check-element animate-show" ng-show="showAHCDetails" style="position:absolute; top: 20px; left: 10%; width: 90%; z-index: 1000;">
 
     <div id="post-8" class="hentry post publish post-1 odd author-rick-w-jonesgmail-com category-2013">
 
