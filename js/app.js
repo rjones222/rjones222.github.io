@@ -2,20 +2,30 @@ angular.module('website', ['ngAnimate'])
     .controller('MainCtrl', function ($scope) {
 //        defining a pages object
         $scope.pages = {
-            'home': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Home', content: 'This is page content.' },
+            //'home': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Home', content: 'This is page content.' },
             'about': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'About', content: 'This is page content.' },
             'contact': {
                 label: 'Rick W. Jones | Front End / UI Developer',
                 sublabel: 'Contact',
                 content: '<a href="mailto:rick@rickwjones.com">rick@rickwjones.com</a><br>(424) 212-1201'
+            },
+            'portfolio': {
+                label: 'Rick W. Jones | Front End / UI Developer',
+                sublabel: 'Portfolio',
+                content: ''
             }
         };
 
+        /*$scope.templates =
+            [ { name: 'portfolio.html', url: 'views/portfolio.html'},
+                { name: 'template2.html', url: 'template2.html'} ];
+        $scope.template = $scope.templates[0];*/
+
 //        keeping track of the current page, set initiallly to home
-        $scope.currentPage = 'home';
+        $scope.currentPage = 'about';
 
 //        setting a page property on $scope to hold the actual content of the page we are on
-        $scope.page = $scope.pages['home'];
+        $scope.page = $scope.pages['about'];
 
 //        toggle content panel visibility binding to be visible initially
         $scope.isInTransit = false;
