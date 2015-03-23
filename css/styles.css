@@ -98,3 +98,12 @@ header span {
 .blue {
     color: #0088cc;
 }
+
+.portfolio-item {
+    float: left;
+    width: 23.40425531914894%;
+    height: 150px;
+    margin: 0 2.127659574468085% 20px 0;
+    position: relative;
+    overflow: hidden;
+}
