@@ -1,7 +1,9 @@
+document.getElementByTagName('body').innerHTML = "";
+
 angular.module('website', ['ngAnimate', 'ngRoute'])
     .controller('MainCtrl', function ($scope) {
 //        defining a pages object
-        $scope.pagesLOCK = {
+        $scope.pages = {
             //'home': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Home', content: 'This is page content.' },
             'about': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'About', content: 'This is page content.' },
             'contact': {
