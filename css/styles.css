@@ -87,7 +87,7 @@ header span {
     /*width: 430px;
     height: 305px;*/
     margin: -180px 0 0 0;
-    max-width: 695px;
+    min-width: 695px;
     padding: 35px 35px 15px 35px;
     overflow: hidden;
     background: #ffffff;
@@ -100,7 +100,7 @@ header span {
 }
 
 #content {
-    height: 162px;
+    height: 337px;
     overflow: scroll;
 }
 
