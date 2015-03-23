@@ -29,7 +29,9 @@
             <h3>{{page.sublabel}}</h3>
             <p ng-bind-html="page.content | unsafe"></p>
             <div ng-if="isCurrentPage('portfolio')">
-                <div ng-include src="'portfolio.html'"></div>
+                <!--<div ng-include src="'portfolio.html'"></div>-->
+
+                <script id="'portfolio.html'" type="text/ng-template"></script>
 
             </div>
 
