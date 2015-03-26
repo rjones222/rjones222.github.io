@@ -7,7 +7,7 @@
 .ruby-gemset
 .settings/
 
-bower_components
+#bower_components
 
 #compass stuff
 .sass-cache
