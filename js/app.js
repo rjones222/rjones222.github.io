@@ -1,4 +1,4 @@
-angular.module('website', ['ngAnimate', 'ngRoute'])
+angular.module('website', [require('angular-animate', 'angular-route')])
     .controller('MainCtrl', function ($scope) {
 //        defining a pages object
         $scope.pages = {
