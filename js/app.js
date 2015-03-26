@@ -1,5 +1,5 @@
 // hide the site until password protected
-document.getElementById('main').innerHTML = "";
+// document.getElementById('main').innerHTML = "";
 
 var website = angular.module('website', ['ngAnimate', 'ngRoute'])
     .controller('MainCtrl', function ($scope) {
@@ -15,7 +15,12 @@ var website = angular.module('website', ['ngAnimate', 'ngRoute'])
             'portfolio': {
                 label: 'Rick W. Jones',
                 sublabel: 'Portfolio',
-                content: 'My current portfolio is the html, css of <a href="http://www.saatchiart.com">Saatchi Art</a>. To view previous projects...'
+                content: 'Since November of 2013 I\'ve had the honor of working at <a href="http://www.saatchiart.com">Saatchi Art</a> I authored all the HTML and CSS. To view previous projects <a ng-click="setCurrentPage(\'ahc\')">start here</a>.'
+            },
+            'ahc': {
+                label: 'American Heritage Chocolate',
+                sublabel: 'Portfolio',
+                content: '<div class=“span9”><img src="http://rickwjones.com/wp/wp-content/uploads/2013/05/AHC-timeline-screencap1.jpg" alt="Parallax scrolling timeline" class="single-thumbnail featured" width="640" height="360"></div><!— .span9 —><div class=“span3 post-aside"><h3 class="post-title entry-title">MARS: American Heritage Chocolate</h3><div class="loop-nav"><div class="previous"><a href="http://rickwjones.com/wp/2013/10/01/project-7/" rel="prev">Alzheimer’s Association: The Longest Day →</a></div></div><!-- .loop-nav --></div><div class="entry-content"><img src="http://rickwjones.com/wp/wp-content/uploads/2013/09/American-Heritage-Chocolate.jpg" alt="Homepage American Heritage Chocolate" class="size-full wp-image-194"><p><img src="http://rickwjones.com/wp/wp-content/uploads/2013/05/mars2.jpg" alt="mars2" class="alignnone size-full wp-image-122"></p><img src="http://rickwjones.com/wp/wp-content/uploads/2013/05/mars-ahc.digital.promocampaigns.comPHASE2.png" alt="Phase 2 lo-fi wireframes using Foundation4." class="size-full wp-image-180"><div class="about-project" style="margin-top: -30px;"><p>Front end HTML and CSS for <a href="http://americanheritagechocolate.com/" target="_blank" title="Go to MARS American Heritage Chocolate site">American Heritage Chocolate</a> using Foundation 4 CSS framework for a responsive web experience.</p><p style="margin-top: -9px;">I also helped create the parallax scrolling <a href="http://americanheritagechocolate.com/home/history" title="AHC: History of Chocolate" target="_blank">History of Chocolate</a>, an adaptive interactive timeline using HTML5, CSS3 and jQuery Animation.</p></div></div><!-- .entry-content --></div>'
             }
         };
 
