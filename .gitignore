@@ -1,12 +1,13 @@
+.DS_Store
 .idea
+.idea/*
 .htaccess
 .project
 .ruby-version
 .ruby-gemset
 .settings/
-.idea/*
 
-.DS_Store
+bower_components
 
 #compass stuff
 .sass-cache
