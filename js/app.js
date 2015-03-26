@@ -15,7 +15,7 @@ var website = angular.module('website', ['ngAnimate', 'ngRoute'])
             'portfolio': {
                 label: 'Rick W. Jones',
                 sublabel: 'Portfolio',
-                content: 'Since November of 2013 I\'ve had the honor of working at <a href="http://www.saatchiart.com" target="_blank">Saatchi Art</a> I authored all the HTML and CSS. To view previous projects <div class="nav"><a ng-click="setCurrentPage(\'ahc\')">start here</a></div>.'
+                content: 'Since November of 2013 I\'ve had the honor of working at <a href="http://www.saatchiart.com" target="_blank">Saatchi Art</a> I authored all the HTML and CSS. To view previous projects <div class="nav" style="display:inline-block;"><a ng-click="setCurrentPage(\'ahc\')">start here</a></div>.'
             },
             'ahc': {
                 label: 'American Heritage Chocolate',
