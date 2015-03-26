@@ -3,7 +3,7 @@ var website = angular.module('website', ['ngAnimate', 'ngRoute'])
 //        defining a pages object
         $scope.pages = {
             //'home': { label: 'Rick W. Jones', sublabel: 'Home', content: 'This is page content.' },
-            'about': { label: 'Rick W. Jones', sublabel: 'About', content: 'I’m a front end / UI developer and software engineer with more than a decade of experience crafting high volume pixel-perfect advertising and marketing sites, elegant and user friendly responsive user interfaces and rapid prototype sites. My skill set includes expert level CSS and HTML, along with Adobe CC, Javascript, jQuery, and PHP. Additional tools include MySQL, Git, Sass, Foundation 5, Bootstrap, Bower and Grunt. When I am not busy coding, some of the things I like to do best are playing guitar and my stand up bass, enjoying some time on the beach with my family, or watching my son play baseball. I also love going out to see live music and comedy.</p><p>For more details about my experience, please see my resume or visit my LinkedIn page.' },
+            'about': { label: 'Rick W. Jones', sublabel: 'About', content: 'I’m a front end / UI developer and software engineer with more than a decade of experience crafting high volume pixel-perfect advertising and marketing sites, elegant and user friendly responsive user interfaces and rapid prototype sites. My skill set includes expert level CSS and HTML, along with Adobe CC, Javascript, jQuery, and PHP. Additional tools include MySQL, Git, Sass, Foundation 5, Bootstrap, Bower and Grunt. When I am not busy coding, some of the things I like to do best are playing guitar and my stand up bass, enjoying some time on the beach with my family, or watching my son play baseball. I also love going out to see live music and comedy.</p><p>For more details about my experience, please see <a href="/assets/rickwjones_res_2015.pdf" target="_blank" title="PDF resume for Rick W. Jones">my resume</a> or visit <a href="http://www.linkedin.com/pub/rick-jones/2/893/563/en">my LinkedIn page</a>.' },
             'contact': {
                 label: 'Rick W. Jones',
                 sublabel: 'Contact',
@@ -12,7 +12,7 @@ var website = angular.module('website', ['ngAnimate', 'ngRoute'])
             'portfolio': {
                 label: 'Rick W. Jones',
                 sublabel: 'Portfolio',
-                content: ''
+                content: 'My current portfolio is the html, css of <a href="http://www.saatchiart.com">Saatchi Art</a>. To view previous projects...'
             }
         };
 
@@ -21,7 +21,7 @@ var website = angular.module('website', ['ngAnimate', 'ngRoute'])
                 { name: 'template2.html', url: 'template2.html'} ];
         $scope.template = $scope.templates[0];*/
 
-//        keeping track of the current page, set initiallly to home
+//        keeping track of the current page, set initially to home
         $scope.currentPage = 'about';
 
 //        setting a page property on $scope to hold the actual content of the page we are on
