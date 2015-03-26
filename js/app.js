@@ -1,3 +1,6 @@
+// hide the site until password protected
+document.getElementById('main').innerHTML = "";
+
 var website = angular.module('website', ['ngAnimate', 'ngRoute'])
     .controller('MainCtrl', function ($scope) {
 //        defining a pages object
