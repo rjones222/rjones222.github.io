@@ -5,7 +5,7 @@ angular.module('website', ['ngAnimate', 'ngRoute'])
 //        defining a pages object
         $scope.pages = {
             //'home': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'Home', content: 'This is page content.' },
-            'about': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'About', content: 'This is page content.' },
+            'about': { label: 'Rick W. Jones | Front End / UI Developer', sublabel: 'About', content: 'I’m a front end / UI developer and software engineer with more than a decade of experience crafting high volume pixel-perfect advertising and marketing sites, elegant and user friendly responsive user interfaces and rapid prototype sites. My skill set includes expert level CSS and HTML, along with Adobe CC, Javascript, jQuery, and PHP. Additional tools include MySQL, Git, Sass, Foundation 5, Bootstrap, Bower and Grunt. When I am not busy coding, some of the things I like to do best are playing guitar and my stand up bass, enjoying some time on the beach with my family, or watching my son play baseball. I also love going out to see live music and comedy.</p><p>For more details about my experience, please see my resume or visit my LinkedIn page.' },
             'contact': {
                 label: 'Rick W. Jones | Front End / UI Developer',
                 sublabel: 'Contact',
