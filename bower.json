@@ -1,0 +1,15 @@
+{
+  "name": "Portfolio for Rick W. Jones",
+  "description": "An AngularJS project, among other things",
+  "version": "0.0.0",
+  "homepage": "http://rjones222.github.io/",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.0",
+    "angular-mocks": "~1.3.0",
+    "jquery": "2.1.1",
+    "bootstrap": "~3.1.1",
+    "angular-route": "~1.3.0"
+  }
+}
