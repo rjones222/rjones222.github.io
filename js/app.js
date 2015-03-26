@@ -1,6 +1,4 @@
-//angular.module('website', [require('angular-animate', 'angular-route')]);
-
-angular.module('website', ['ngAnimate', 'ngRoute'])
+var website = angular.module('website', ['ngAnimate', 'ngRoute'])
     .controller('MainCtrl', function ($scope) {
 //        defining a pages object
         $scope.pages = {
@@ -134,3 +132,19 @@ angular.module('website', ['ngAnimate', 'ngRoute'])
             return $sce.trustAsHtml(val);
         };
     });
+
+website.config(['$routeProvider',
+    function($routeProvider) {
+        $routeProvider.
+            when('/portfolio', {
+                templateUrl: 'partials/portfolio.html',
+                controller: 'MainCtrl'
+            }).
+            when('/portfolio/:portfolioId', {
+                templateUrl: 'partials/portfolio-detail.html',
+                controller: 'MainCtrl'
+            }).
+            otherwise({
+                redirectTo: '/portfolio'
+            });
+    }]);
