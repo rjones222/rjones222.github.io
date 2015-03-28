@@ -29,7 +29,7 @@
     <img bg class="fullBg bg-animation" ng-if="isCurrentPage('contact')" src="images/bkgd010.jpg">
     <img bg class="fullBg bg-animation" ng-if="isCurrentPage('portfolio')" src="images/bkgd000.jpg">
 
-    <div class="panel panel-animation" ng-hide="isInTransit" >
+    <div id="page" class="panel panel-animation" ng-hide="isInTransit" >
         <div>
             <h1 class="blue">{{page.label}}</h1>
             <h3>{{page.sublabel}}</h3>
@@ -42,6 +42,10 @@
             </div>-->
 
         </div>
+    </div>
+
+    <div id="subpage" class="panel">
+
     </div>
 
     <ul class="nav nav-pills well">

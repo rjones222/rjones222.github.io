@@ -10,6 +10,11 @@ body {
     overflow: hidden;
 }
 
+a:hover, a:focus {
+    color: #000000;
+    text-decoration: none;
+}
+
 /*header {
     position: absolute;
     top: 35px;
@@ -104,6 +109,48 @@ header span {
     overflow: scroll;
 }
 
+#subpage {
+    color: #333333;
+    display: none;
+    opacity: 1;
+    padding-bottom: 2.5rem;
+}
+
+#subpage img {
+    width: 100%;
+}
+
+.entry-content {
+    padding-top: 1rem;
+    position: relative;
+}
+
+#subpage .entry-content img {
+    display: inline-block;
+    float: left;
+    width: 24%;
+}
+
+#subpage h3 {
+    line-height: 1rem;
+    margin-top: 0;
+}
+
+.about-project, .loop-nav {
+    float: left;
+}
+
+.loop-nav {
+    padding-left: 1rem;
+    position: absolute;
+    right: 2%;
+    text-align: right;
+    top: 0.6rem;
+    width: 24%;
+}
+
+
+
 .portfolio-item {
     float: left;
     width: 18%;
@@ -116,6 +163,7 @@ header span {
 .portfolio-item img {
     width: 100%;
 }
+
 
 /* animations */
 
