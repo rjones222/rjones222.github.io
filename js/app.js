@@ -183,17 +183,23 @@ function goToSubpage(page) {
             content: '<div class="row-fluid"><div class="span4"><img src="http://rickwjones.com/wp/wp-content/uploads/2013/05/alz.jpg" alt="Alzheimer’s Association: The Longest Day" class="single-thumbnail featured"></div><div class="span6 post-aside"><h3>Alzheimer’s Association: The Longest Day</h3><div class="about-project"><p>I coded the HTML and CSS on this Responsive site for the <a href="http://act.alz.org/site/TR?fr_id=6650&pg=entry" target="_blank" title="Go to Alzheimer’s Association: The Longest Day site">Alzheimer’s Association “The Longest Day” campaign</a>. <p>Our site helped The Alzheimer’s Association exceed this year’s fundraising goal of $1M by over 30% ($1,302,817 total).</p></div></div></div><div class="row-fluid"><div class="span12 entry-content"><img src="http://rickwjones.com/wp/wp-content/uploads/2013/06/alz-tablet.jpg" alt="Tablet view"><img src="http://rickwjones.com/wp/wp-content/uploads/2013/06/alz-phone.jpg" alt="iPhone"><img src="http://rickwjones.com/wp/wp-content/uploads/2013/05/Alzheimers-Association-The-Longest-Day8.png" alt="Thank you"><div class="loop-nav"><div class="previous"><a href="javascript:void(0)" onclick="goToSubpage(\'mss\')" rel="prev">Be The Match: My Social Stand →</a></div></div></div></div>'
         }
 
+    $('#page').hide();
+    if (page === 'ahc') {
+        $('#subpage').show('slow').html(ahc.content);
+    } else if (page === 'alz') {
+        $('#subpage').hide().show('slow').html(alz.content);
+    }
 
-    $('#' + page).on('click', function() {
+
+    /*$('#' + page).on('click', function() {
         $('#page').hide();
         if (page === 'ahc') {
-            $('#subpage').show('slow').html(ahc.content);
+            $('#subpage').show('fast').html(ahc.content);
         } else if (page === 'alz') {
-            $('#subpage').hide();
-            $('#subpage').show('slow').html(alz.content);
+            $('#subpage').hide().show('fast').html(alz.content);
         }
 
-    });
+    });*/
 
 };
 
