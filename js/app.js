@@ -208,12 +208,19 @@ $('.nav a').on('click', function() {
     $('#subpage').hide();
 });
 
-var url = window.location.href;
+$(function() {
+    if ( document.location.href.indexOf('#Contact') > -1 ) {
+        $('#link-contact').click();
+        setCurrentPage('contact');
+    }
+});
+
+/*var url = window.location.href;
 
 if (url.search("#Contact") >= 0) {
     $('#link-contact').click();
     setCurrentPage('contact');
-}
+}*/
 
 
 
