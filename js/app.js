@@ -212,6 +212,7 @@ var url = window.location.href;
 
 if (url.search("#Contact") >= 0) {
     $('#link-contact').click();
+    setCurrentPage('contact');
 }
 
 
