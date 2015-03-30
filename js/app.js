@@ -14,7 +14,7 @@ angular.module('website', ['ngAnimate', 'ngRoute'])
             'contact': {
                 label: 'Rick W. Jones',
                 sublabel: 'Contact',
-                content: '<a href="mailto:rick@rickwjones.com">rick@rickwjones.com</a><br>(424) 212-1201'
+                content: '<a href="mailto:rick@rickwjones.com">rick@rickwjones.com</a><br>(424) 212-1201<br>(310) 316-1483'
             },
             'portfolio': {
                 label: 'Rick W. Jones',
