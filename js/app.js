@@ -19,7 +19,7 @@ angular.module('website', ['ngAnimate', 'ngRoute'])
             'portfolio': {
                 label: 'Rick W. Jones',
                 sublabel: 'Portfolio',
-                content: 'Since November of 2013, I\'ve worked as a Front End Software Engineer at <a href="http://www.saatchiart.com" target="_blank">Saatchi Art</a>, part of Demand Media. Saatchi Art is one of the world’s leading online art galleries, and works to connect a diversity of artists and collectors around the globe. My role focuses on UI Development using HTML, CSS, PHP, jQuery and responsive design for mobile and tablet. I enjoy coding in collaborative Agile teams, using a Mobile First approach, utilizing lo-fi wireframes and HTML prototyping, as called for.</em><br><br>To view a selection of my earlier work please <a href="http://rickwjones.com">click here</a>.'
+                content: 'Since November of 2013, I\'ve worked as a Front End Software Engineer at <a href="http://www.saatchiart.com" target="_blank">Saatchi Art</a>, part of Demand Media. Saatchi Art is one of the world’s leading online art galleries, and works to connect a diversity of artists and collectors around the globe. My role focuses on UI Development using HTML, CSS, PHP, jQuery and responsive design for mobile and tablet. I enjoy coding in collaborative Agile teams, using a Mobile First approach, utilizing lo-fi wireframes and HTML prototyping, to facilitate pre-production iteration based on stakeholder input.</em><br><br>To view a selection of my earlier work please <a href="http://rickwjones.com">click here</a>.'
             }
         };
         /*$scope.templates =
