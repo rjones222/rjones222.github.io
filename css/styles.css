@@ -59,7 +59,7 @@ header span {
 
 .nav {
     position: absolute;
-    right: 35px;
+    right: 7%;
     top: 35px;
     z-index: 110;
     float: none;
@@ -73,8 +73,7 @@ header span {
 }
 
 .nav-pills>li>a {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding:8px 9px;
     margin-top: 2px;
     margin-bottom: 2px;
     -webkit-border-radius: 0;
@@ -203,4 +202,14 @@ header span {
     padding: 10px;
     border: 1px solid black;
     background: white;
+}
+
+
+@media screen and (min-width: 600px) {
+    .nav {
+        right: 35px;
+    }
+    .nav-pills>li>a {
+        padding: 8px 12px;
+    }
 }
