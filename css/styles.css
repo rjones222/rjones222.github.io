@@ -101,6 +101,16 @@ header span {
     width: 80%;
 }
 
+.credit {
+    font-size: 11px;
+    color: #b3b3b3;
+}
+
+.credit a {
+    color: #b3b3b3;
+}
+
+
 .blue {
     color: #0088cc;
 }
