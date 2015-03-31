@@ -104,6 +104,7 @@ header span {
 .credit {
     font-size: 11px;
     color: #b3b3b3;
+    text-align: right;
 }
 
 .credit a {
