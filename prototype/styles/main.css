@@ -570,7 +570,7 @@ button:active,
 }
 
 .spoonflower_logo {
-  background: url("/images/logo.svg");
+  background: url("../images/logo.svg");
   background-repeat: no-repeat;
   background-size: 153px 38px;
   display: block;
