@@ -209,7 +209,7 @@ $('.nav a').on('click', function() {
 });
 
 // keyboard accessibility for nav
-$('.nav a').keypress(function( event ) {
+$('.nav a').on('keypress', function( event ) {
     if ( event.which == 13 ) {
         $('#page').show('slow');
         $('#subpage').hide();
