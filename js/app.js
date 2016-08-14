@@ -208,6 +208,14 @@ $('.nav a').on('click', function() {
     $('#subpage').hide();
 });
 
+// keyboard accessibility for nav
+$('.nav a').keypress(function( event ) {
+    if ( event.which == 13 ) {
+        $('#page').show('slow');
+        $('#subpage').hide();
+    }
+});
+
 $(function() {
     if ( document.location.href.indexOf('#Contact') > -1 ) {
         $('#link-contact').click();
