@@ -106,8 +106,8 @@ select:active {
 
 @font-face {
   font-family: 'spoonflower_icons';
-  src: url("fonts/spoonflower_icons.eot?48676305");
-  src: url("fonts/spoonflower_icons.eot?48676305#iefix") format("embedded-opentype"), url("fonts/spoonflower_icons.woff2?48676305") format("woff2"), url("fonts/spoonflower_icons.woff?48676305") format("woff"), url("fonts/spoonflower_icons.ttf?48676305") format("truetype"), url("fonts/spoonflower_icons.svg?48676305#spoonflower_icons") format("svg");
+  src: url("../fonts/spoonflower_icons.eot?48676305");
+  src: url("../fonts/spoonflower_icons.eot?48676305#iefix") format("embedded-opentype"), url("../fonts/spoonflower_icons.woff2?48676305") format("woff2"), url("../fonts/spoonflower_icons.woff?48676305") format("woff"), url("../fonts/spoonflower_icons.ttf?48676305") format("truetype"), url("../fonts/spoonflower_icons.svg?48676305#spoonflower_icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
