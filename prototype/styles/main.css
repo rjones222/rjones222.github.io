@@ -1569,7 +1569,7 @@ select:active {
     display: none;
   }
   .h_bar > nav {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid #efefef;
     border-top: 1px solid #efefef;
     box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.15);
@@ -1978,7 +1978,6 @@ select:active {
 
 @media screen and (min-width: 60em) {
   .h_bar > nav {
-    background-color: rgba(0, 0, 0, 0.03);
     top: 118px;
   }
   .nav-link {
