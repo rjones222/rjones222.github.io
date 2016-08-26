@@ -51,9 +51,15 @@
 
     <ul class="nav nav-pills well">
         <!--<li ng-class="{'active':isCurrentPage('home')}"><a ng-click="setCurrentPage('home')">HOME</a></li>-->
-        <li ng-class="{'active':isCurrentPage('about')}"><a ng-click="setCurrentPage('about')">ABOUT</a></li>
-        <li ng-class="{'active':isCurrentPage('portfolio')}"><a id="link-portfolio" ng-click="setCurrentPage('portfolio')">PORTFOLIO</a></li>
-        <li ng-class="{'active':isCurrentPage('contact')}"><a id="link-contact" ng-click="setCurrentPage('contact')">CONTACT</a></li>
+        <li ng-class="{'active':isCurrentPage('about')}">
+            <a ng-click="setCurrentPage('about')" ng-keypress="($event.which === 13)?setCurrentPage('about'):0" tabindex="0">ABOUT</a>
+        </li>
+        <li ng-class="{'active':isCurrentPage('portfolio')}">
+            <a id="link-portfolio" ng-click="setCurrentPage('portfolio')" ng-keypress="($event.which === 13)?setCurrentPage('portfolio'):0" tabindex="0">PORTFOLIO</a>
+        </li>
+        <li ng-class="{'active':isCurrentPage('contact')}">
+            <a id="link-contact" ng-click="setCurrentPage('contact')" ng-keypress="($event.which === 13)?setCurrentPage('contact'):0" tabindex="0">CONTACT</a>
+        </li>
     </ul>
 
     <script src="js/app.js"></script>
