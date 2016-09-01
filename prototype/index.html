@@ -53,22 +53,38 @@
             <button><i class="icon icon_menu" aria-hidden="true"></i></button>
           </div>
           <!-- Start of Desktop Search Section -->
-          <div id="searchModule-desktop" class="search_module search_desktop mobile_hide">
-            <form>
-              <div class="search_select-wrapper">
-                <select name="search_select" class="search_select">
-                  <option value="fabric">Fabric</option>
-                  <option value="wallpaper">Wallpaper</option>
-                  <option value="gift_wrap">Gift Wrap</option>
-                  <option value="designers">Designers</option>
-                  <option value="collections">Collections</option>
-                </select>
+          <div class="search_module search_desktop mobile_hide">
+            <form accept-charset="UTF-8" action="http://www.spoonflower.com/shop" id="search_form" method="get" name="search_form" class="search_form">
+              <input class="search_filter" name="type" type="hidden" value="fabric">
+              <input class="view" name="view" type="hidden" value="designs">
+              <input class="search_shop" name="shop" type="hidden" value="fabric">
+              <div class="search_select-wrapper screen-reader-focus" tabindex="0" >
+                <div class="search_selected" data-filter="Fabric">
+                  Fabric
+                </div>
               </div>
+              <ul class="search_select-dropdown">
+                <li class="search_select-item" data-filter="fabric" tabindex="0">
+                  <span>Fabric</span>
+                </li>
+                <li class="search_select-item" data-filter="wallpaper" tabindex="0">
+                  <span>Wallpaper</span>
+                </li>
+                <li class="search_select-item" data-filter="gift_wrap" tabindex="0">
+                  <span>Gift Wrap</span>
+                </li>
+                <li class="search_select-item" data-filter="designers" tabindex="0">
+                  <span>Designers</span>
+                </li>
+                <li class="search_select-item" data-filter="collections" tabindex="0">
+                  <span>Collections</span>
+                </li>
+              </ul>
               <button class="btn btn-select" aria-hidden="true" tabindex="-1">
                 <i class="icon icon_chevron_down" aria-hidden="true"></i>
               </button>
-              <input type="text" class="search_input" />
-              <button type="submit" class="btn btn-search screen-reader-focus">
+              <input autocomplete="off" class="search_input" name="t" size="30" type="text" value="" />
+              <button class="btn btn-search screen-reader-focus" name="commit" type="submit" value="Search">
                 <i class="icon icon_search" aria-hidden="true"></i>
               </button>
             </form>
@@ -80,21 +96,37 @@
             <li class="mobile_search desktop_hide">
               <!-- Start of Mobile Search Section -->
               <div id="searchModule-mobile" class="search_module">
-                <form>
-                  <div class="search_select-wrapper">
-                    <select name="search_select" class="search_select">
-                      <option value="fabric">Fabric</option>
-                      <option value="wallpaper">Wallpaper</option>
-                      <option value="gift_wrap">Gift Wrap</option>
-                      <option value="designers">Designers</option>
-                      <option value="collections">Collections</option>
-                    </select>
+                <form accept-charset="UTF-8" action="http://www.spoonflower.com/shop" id="search_form" method="get" name="search_form" class="search_form">
+                  <input class="search_filter" name="type" type="hidden" value="fabric">
+                  <input class="view" name="view" type="hidden" value="designs">
+                  <input class="search_shop" name="shop" type="hidden" value="fabric">
+                  <div class="search_select-wrapper screen-reader-focus" tabindex="0" >
+                    <div class="search_selected" data-filter="Fabric">
+                      Fabric
+                    </div>
                   </div>
-                  <button class="btn btn-select">
+                  <ul class="search_select-dropdown">
+                    <li class="search_select-item" data-filter="fabric" tabindex="0">
+                      <span>Fabric</span>
+                    </li>
+                    <li class="search_select-item" data-filter="wallpaper" tabindex="0">
+                      <span>Wallpaper</span>
+                    </li>
+                    <li class="search_select-item" data-filter="gift_wrap" tabindex="0">
+                      <span>Gift Wrap</span>
+                    </li>
+                    <li class="search_select-item" data-filter="designers" tabindex="0">
+                      <span>Designers</span>
+                    </li>
+                    <li class="search_select-item" data-filter="collections" tabindex="0">
+                      <span>Collections</span>
+                    </li>
+                  </ul>
+                  <button class="btn btn-select" aria-hidden="true" tabindex="-1">
                     <i class="icon icon_chevron_down" aria-hidden="true"></i>
                   </button>
-                  <input type="text" class="search_input" />
-                  <button type="submit" class="btn btn-search">
+                  <input autocomplete="off" class="search_input" name="t" size="30" type="text" value="" />
+                  <button class="btn btn-search screen-reader-focus" name="commit" type="submit" value="Search">
                     <i class="icon icon_search" aria-hidden="true"></i>
                   </button>
                 </form>
@@ -103,12 +135,15 @@
             </li>
             <li class="has_subnav">
               <a href="http://www.spoonflower.com/shop" class="nav-link nav-link-primary">Shop</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-primary">
                 <li class="has_subnav">
                   <a href="http://www.spoonflower.com/shop?shop=fabric" class="nav-link nl-lvl2">By Designs</a>
+                  <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                   <ul class="subnav sn-lvl2">
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/shop?main=new&shop=fabric&view=main" class="nav-link nl-lvl3">Top & Trending</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl2-last">
                         <li>
                           <a href="http://www.spoonflower.com/tags/art%20nouveau" class="nav-link nl-lvl4">art nouveau</a>
@@ -262,6 +297,7 @@
                         </li>
                       </ul>
                       <!-- the list above needs this markup if copied from /welcome 'Shop by Tags'
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl2-last">
                         <li>
                           <a href="http://www.spoonflower.com/tags/#" class="nav-link nl-lvl4">Lorem Ipsum</a>
@@ -270,9 +306,11 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/style" class="nav-link nl-lvl3">Style</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/modern" class="nav-link nl-lvl4">Modern</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/geometric" class="nav-link nl-lvl5">Geometric</a>
@@ -308,6 +346,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/traditional" class="nav-link nl-lvl4">Traditional</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/plaid" class="nav-link nl-lvl5">Plaid</a>
@@ -349,6 +388,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/historical" class="nav-link nl-lvl4">Historical</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/midcentury%20modern" class="nav-link nl-lvl5">Mid Century Modern</a>
@@ -387,6 +427,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/nautical" class="nav-link nl-lvl4">Nautical</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/anchors" class="nav-link nl-lvl5">Anchors</a>
@@ -425,6 +466,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/artistic" class="nav-link nl-lvl4">Artistic</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/watercolor" class="nav-link nl-lvl5">Watercolor</a>
@@ -448,6 +490,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/shapes" class="nav-link nl-lvl4">Shapes</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/triangles" class="nav-link nl-lvl5">Triangles</a>
@@ -489,6 +532,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/texture" class="nav-link nl-lvl4">Texture</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/marble" class="nav-link nl-lvl5">Marble</a>
@@ -512,6 +556,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/geography" class="nav-link nl-lvl4">Geography</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/mandala" class="nav-link nl-lvl5">Mandala</a>
@@ -556,6 +601,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/worldly" class="nav-link nl-lvl4">Worldly</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/tribal" class="nav-link nl-lvl5">Tribal</a>
@@ -578,9 +624,11 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/animals" class="nav-link nl-lvl3">Animals</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/woodland" class="nav-link nl-lvl4">Woodland</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/fox" class="nav-link nl-lvl5">Fox</a>
@@ -616,6 +664,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/farm" class="nav-link nl-lvl4">Farm</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/cows" class="nav-link nl-lvl5">Cows</a>
@@ -651,6 +700,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/pets" class="nav-link nl-lvl4">Pets</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/cat" class="nav-link nl-lvl5">Cat</a>
@@ -680,6 +730,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/ocean" class="nav-link nl-lvl4">Ocean</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/whale" class="nav-link nl-lvl5">Whale</a>
@@ -712,6 +763,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/insects" class="nav-link nl-lvl4">Insects</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/bug" class="nav-link nl-lvl5">Bug</a>
@@ -738,6 +790,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/birds" class="nav-link nl-lvl4">Birds</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/flamingo" class="nav-link nl-lvl5">Flamingo</a>
@@ -764,6 +817,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/zoo" class="nav-link nl-lvl4">Zoo</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/panda" class="nav-link nl-lvl5">Panda</a>
@@ -799,6 +853,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/safari" class="nav-link nl-lvl4">Safari</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/lions" class="nav-link nl-lvl5">Lions</a>
@@ -837,6 +892,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/dog%20breeds" class="nav-link nl-lvl4">Dog Breeds</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/corgi" class="nav-link nl-lvl5">Corgi</a>
@@ -871,9 +927,11 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/nature" class="nav-link nl-lvl3">Nature</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/botanical" class="nav-link nl-lvl4">Botanical</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/flora" class="nav-link nl-lvl5">Flora</a>
@@ -924,6 +982,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/space" class="nav-link nl-lvl4">Space</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/galaxy" class="nav-link nl-lvl5">Galaxy</a>
@@ -962,6 +1021,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/weather" class="nav-link nl-lvl4">Weather</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/rainbow" class="nav-link nl-lvl5">Rainbow</a>
@@ -997,6 +1057,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/birds" class="nav-link nl-lvl4">Birds</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/flamingo" class="nav-link nl-lvl5">Flamingo</a>
@@ -1023,6 +1084,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/woodland" class="nav-link nl-lvl4">Woodland</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/fox" class="nav-link nl-lvl5">Fox</a>
@@ -1064,6 +1126,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/sea" class="nav-link nl-lvl4">Sea</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/seaweed" class="nav-link nl-lvl5">Seaweed</a>
@@ -1093,6 +1156,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/outdoors" class="nav-link nl-lvl4">Outdoors</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/teepee" class="nav-link nl-lvl5">Teepee</a>
@@ -1133,9 +1197,11 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/novelty" class="nav-link nl-lvl3">Novelty</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/foods" class="nav-link nl-lvl4">Food & Beverage</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/donuts" class="nav-link nl-lvl5">Donuts</a>
@@ -1177,6 +1243,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/music" class="nav-link nl-lvl4">Music</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/guitar" class="nav-link nl-lvl5">Guitar</a>
@@ -1209,6 +1276,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/academia" class="nav-link nl-lvl4">Academia</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/geek" class="nav-link nl-lvl5">Geek</a>
@@ -1235,6 +1303,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/sewing%20notions" class="nav-link nl-lvl4">Sewing Notions</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/thimbles" class="nav-link nl-lvl5">Thimbles</a>
@@ -1258,6 +1327,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/#" class="nav-link nl-lvl4">Sports</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/basketball" class="nav-link nl-lvl5">Basketball</a>
@@ -1293,6 +1363,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/scary" class="nav-link nl-lvl4">Scary</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/zombie" class="nav-link nl-lvl5">Zombie</a>
@@ -1319,6 +1390,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/transportation" class="nav-link nl-lvl4">Transportation</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/cars" class="nav-link nl-lvl5">Cars</a>
@@ -1362,9 +1434,11 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/occasion" class="nav-link nl-lvl3">Occasion</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/children" class="nav-link nl-lvl4">Baby & Kids</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/baby%20girl" class="nav-link nl-lvl5">Baby Girl</a>
@@ -1412,6 +1486,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/birthday" class="nav-link nl-lvl4">Birthday</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/balloons" class="nav-link nl-lvl5">Balloons</a>
@@ -1444,6 +1519,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/use%20case" class="nav-link nl-lvl4">Use Case</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/cut%20and%20sew" class="nav-link nl-lvl5">Cut and Sew</a>
@@ -1481,9 +1557,11 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/seasonal" class="nav-link nl-lvl3">Seasonal</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/winder" class="nav-link nl-lvl4">Winter</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/snow" class="nav-link nl-lvl5">Snow</a>
@@ -1525,6 +1603,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/spring" class="nav-link nl-lvl4">Spring</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/tulips" class="nav-link nl-lvl5">Tulips</a>
@@ -1554,6 +1633,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/summer" class="nav-link nl-lvl4">Summer</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/beach" class="nav-link nl-lvl5">Beach</a>
@@ -1580,6 +1660,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/fall" class="nav-link nl-lvl4">Fall</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/leaves" class="nav-link nl-lvl5">Leaves</a>
@@ -1624,6 +1705,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/holidays" class="nav-link nl-lvl4">Holidays</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/hearts" class="nav-link nl-lvl5">Hearts</a>
@@ -1661,9 +1743,11 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/holidays" class="nav-link nl-lvl3">Holidays</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/christmas" class="nav-link nl-lvl4">Christmas</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/santa" class="nav-link nl-lvl5">Santa</a>
@@ -1699,6 +1783,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/july%4th" class="nav-link nl-lvl4">July 4th</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/independence%20day" class="nav-link nl-lvl5">Independence Day</a>
@@ -1737,6 +1822,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/valentines%20day" class="nav-link nl-lvl4">Valentine's Day</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/hearts" class="nav-link nl-lvl5">Hearts</a>
@@ -1757,6 +1843,7 @@
                         </li>
                         <li class="has_subnav">
                           <a href="http://www.spoonflower.com/tags/halloween" class="nav-link nl-lvl4">Halloween</a>
+                          <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                           <ul class="subnav sn-last">
                             <li>
                               <a href="http://www.spoonflower.com/tags/pumpkin" class="nav-link nl-lvl5">Pumpkin</a>
@@ -1802,9 +1889,11 @@
                 </li>
                 <li class="has_subnav">
                   <a href="http://www.spoonflower.com/tags/color" class="nav-link nl-lvl2">By Color</a>
+                  <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                   <ul class="subnav sn-lvl2">
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/white" class="nav-link nl-lvl3"><div class="swatch" style="background:#FFFFFF; border-color: #ddd;"></div>White</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3-2col">
                         <li>
                           <a href="http://www.spoonflower.com/tags/beige" class="nav-link nl-lvl4"><div class="swatch" style="background:#F5F5DC"></div>Beige</a>
@@ -1846,6 +1935,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/gray" class="nav-link nl-lvl3"><div class="swatch" style="background:#C0C0C0"></div>Gray</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li>
                           <a href="http://www.spoonflower.com/tags/grey" class="nav-link nl-lvl4"><div class="swatch" style="background:#808080"></div>Grey</a>
@@ -1881,6 +1971,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/pink" class="nav-link nl-lvl3"><div class="swatch" style="background:#FFCBDB"></div>Pink</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3-2col">
                         <li>
                           <a href="http://www.spoonflower.com/tags/carnation" class="nav-link nl-lvl4"><div class="swatch" style="background:#FFA6C9"></div>Carnation</a>
@@ -1934,6 +2025,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/red" class="nav-link nl-lvl3"><div class="swatch" style="background:#FF0000"></div>Red</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3-2col">
                         <li>
                           <a href="http://www.spoonflower.com/tags/auburn" class="nav-link nl-lvl4"><div class="swatch" style="background:#A52A2A"></div>Auburn</a>
@@ -1999,6 +2091,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/brown" class="nav-link nl-lvl3"><div class="swatch" style="background:#884400"></div>Brown</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3-2col">
                         <li>
                           <a href="http://www.spoonflower.com/tags/beige" class="nav-link nl-lvl4"><div class="swatch" style="background:#F5F5DC"></div>Beige</a>
@@ -2064,6 +2157,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/orange" class="nav-link nl-lvl3"><div class="swatch" style="background:#FF7F00"></div>Orange</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li>
                           <a href="http://www.spoonflower.com/tags/amber" class="nav-link nl-lvl4"><div class="swatch" style="background:#FFBF00"></div>Amber</a>
@@ -2093,6 +2187,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/yellow" class="nav-link nl-lvl3"><div class="swatch" style="background:#FFFF00"></div>Yellow</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li>
                           <a href="http://www.spoonflower.com/tags/citrine" class="nav-link nl-lvl4"><div class="swatch" style="background:#E4D00A"></div>Citrine</a>
@@ -2119,6 +2214,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/green" class="nav-link nl-lvl3"><div class="swatch" style="background:#00FF00"></div>Green</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li>
                           <a href="http://www.spoonflower.com/tags/artichoke" class="nav-link nl-lvl4"><div class="swatch" style="background:#8F9779"></div>Artichoke</a>
@@ -2142,6 +2238,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/cyan" class="nav-link nl-lvl3"><div class="swatch" style="background:#00FFFF"></div>Cyan</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li>
                           <a href="http://www.spoonflower.com/tags/aqua" class="nav-link nl-lvl4"><div class="swatch" style="background:#00FFFF"></div>Aqua</a>
@@ -2168,6 +2265,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/blue" class="nav-link nl-lvl3"><div class="swatch" style="background:#0000FF"></div>Blue</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li>
                           <a href="http://www.spoonflower.com/tags/azure" class="nav-link nl-lvl4"><div class="swatch" style="background:#007FFF"></div>Azure</a>
@@ -2206,6 +2304,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/violet" class="nav-link nl-lvl3"><div class="swatch" style="background:#4B0082"></div>Violet</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3-2col">
                         <li>
                           <a href="http://www.spoonflower.com/tags/amethyst" class="nav-link nl-lvl4"><div class="swatch" style="background:#9966CC"></div>Amethyst</a>
@@ -2247,6 +2346,7 @@
                     </li>
                     <li class="has_subnav">
                       <a href="http://www.spoonflower.com/tags/black" class="nav-link nl-lvl3"><div class="swatch" style="background:#000"></div>Black</a>
+                      <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                       <ul class="subnav sn-lvl3">
                         <li>
                           <a href="http://www.spoonflower.com/tags/charcoal" class="nav-link nl-lvl4"><div class="swatch" style="background:#36454F"></div>Charcoal</a>
@@ -2289,6 +2389,7 @@
                 </li>
                 <li class="mobile_hide has_subnav">
                   <a href="https://roostery.com/" class="nav-link nl-lvl2">Home Decor</a>
+                  <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                   <ul class="subnav sn-panel">
                     <li>
                       <div class="l-box">
@@ -2310,6 +2411,7 @@
                 </li>
                 <li class="mobile_hide has_subnav">
                   <a href="https://sproutpatterns.com/" class="nav-link nl-lvl2">Cut & Sew</a>
+                  <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
                   <ul class="subnav sn-panel">
                     <li>
                       <div class="l-box">
@@ -2340,6 +2442,7 @@
             </li>
             <li class="has_subnav">
               <a href="http://www.spoonflower.com/create" class="nav-link nav-link-primary">Design</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-dropdown">
                 <li><a href="http://www.spoonflower.com/designs/new" class="nav-link nl-lvl2">Upload</a></li>
                 <li><a href="http://www.spoonflower.com/design_tools" class="nav-link nl-lvl2">Design Tools</a></li>
@@ -2349,6 +2452,7 @@
             </li>
             <li class="has_subnav">
               <a href="http://www.spoonflower.com/sell" class="nav-link nav-link-primary">Sell</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-dropdown">
                 <li><a href="http://www.spoonflower.com/sell" class="nav-link nl-lvl2">Commissions</a></li>
                 <li><a href="http://www.spoonflower.com/pro_membership" class="nav-link nl-lvl2">Pro Membership</a></li>
@@ -2360,6 +2464,7 @@
             </li>
             <li class="has_subnav">
               <a href="http://www.spoonflower.com/connect" class="nav-link nav-link-primary">Discover</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-dropdown">
                 <li><a href="http://blog.spoonflower.com/" class="nav-link nl-lvl2">Blog</a></li>
                 <li><a href="http://www.spoonflower.com/videos" class="nav-link nl-lvl2">Videos</a></li>
@@ -2399,6 +2504,7 @@
             </li>
             <li class="has_subnav">
               <a href="http://www.spoonflower.com/how_it_works" class="nav-link nav-link-primary">How It Works</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-dropdown">
                 <li><a href="http://www.spoonflower.com/how_it_works" class="nav-link nl-lvl2">Our Process</a></li>
                 <li><a href="http://www.spoonflower.com/spoonflower_fabrics" class="nav-link nl-lvl2">Products</a></li>
@@ -2411,6 +2517,7 @@
             </li>
             <li class="has_subnav">
               <a href="https://support.spoonflower.com/" class="nav-link nav-link-primary">Help</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-dropdown">
                 <li><a href="https://support.spoonflower.com/" class="nav-link nl-lvl2">Help Center</a></li>
                 <li><a href="http://www.spoonflower.com/videos" class="nav-link nl-lvl2">Tutorials</a></li>
@@ -2420,6 +2527,7 @@
             </li>
             <!-- <li class="has_subnav desktop_hide">
               <a href="#" class="nav-link">More [#]</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-primary">
                 <li>
                   <a href="#" class="nav-link nl-lvl2">[Mobile only - What goes here?]</a>
@@ -2428,6 +2536,7 @@
             </li> -->
             <li class="has_subnav desktop_hide">
               <a href="https://sproutpatterns.com/" class="nav-link">Sprout Patterns</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav sn-panel">
                 <li>
                   <div class="l-box">
@@ -2449,6 +2558,7 @@
             </li>
             <li class="has_subnav desktop_hide">
               <a href="https://roostery.com/" class="nav-link">Roostery</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav sn-panel">
                 <li>
                   <div class="l-box">
@@ -2475,6 +2585,7 @@
                 <span class="promo_text">Special Offers</span>
                 <i id="iconIndicator" class="icon icon_close" aria-hidden="true"></i>
               </button>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-dropdown promos_menu_mobile">
                 <li><a href="#" class="nav-link nl-lvl2">Want Free Shipping Every Day?</a></li>
                 <hr class="btm_border" />
@@ -2492,7 +2603,7 @@
       <div class="u_bar-container" tabindex="-1">
         <ul class="u_sites nav">
           <li>
-            <a href="https://sproutpatterns.com/"><img class="sprout_patterns_logo" src="images/sprout_patterns_logo_green.svg" alt="Sprout Patterns" /></a>
+            <a href="https://sproutpatterns.com/"><img class="sprout_patterns_logo" src="images/sprout_logo.svg" alt="Sprout Patterns" /></a>
           </li>
           <li>
             <a href="https://roostery.com/" class="screen-reader-focus"><img class="roostery_logo" src="images/roostery_logo_green.svg" alt="Roostery Home Decor" /></a>
@@ -2517,6 +2628,7 @@
         <ul class="u_nav nav">
           <li class="has_subnav">
             <a href="#" class="nav-link-primary">User Name <i class="icon icon_chevron_down"></i></a>
+            <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
             <ul class="subnav subnav-dropdown user_menu_mobile">
               <li><a href="#" class="nav-link nl-lvl2 link-logout">Log Out</a></li>
               <li><a href="#" class="nav-link nl-lvl2">Account Settings</a></li>
@@ -2528,6 +2640,7 @@
               <span>121 </span>
               <i class="icon icon_chevron_down"></i>
             </a>
+            <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
             <ul class="subnav subnav-dropdown studio_menu_mobile">
               <li><a href="http://www.spoonflower.com/userhome" class="nav-link nl-lvl2">Studio Home</a></li>
               <li><a href="http://www.spoonflower.com/userhome" class="nav-link nl-lvl2">Design Library</a></li>
@@ -2550,6 +2663,7 @@
               <span>4 </span>
               <i class="icon icon_chevron_down"></i>
             </a>
+            <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
             <ul class="subnav subnav-dropdown cart_dropdown cart_menu_mobile">
               <li class="cart_item">
                 <div class="cart_item-image">
@@ -2646,7 +2760,7 @@
       <div class="outer_container">
         <dl id="whatIsSpoonflower" class="spoonflower_definition">
           <dt class="screen-reader-focus" tabindex="0">
-            Custom printed <span>fabric and more <i class="icon icon_chevron_down"></i></span>
+            Custom printed <span>fabric and more</span><i class="icon icon_chevron_down"></i>
           </dt>
           <dd class="display_none">
             <p>The world’s largest marketplace for eco-friendly,
@@ -2689,6 +2803,7 @@
           <ul class="nav">
             <li class="has_subnav-flyup">
               <a href="http://www.spoonflower.com/about" class="nav-link nav-link-footer">About Us</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-flyup">
                 <li>
                   <a href="#" class="nav-link">Overview</a>
@@ -2709,6 +2824,7 @@
             </li>
             <li class="has_subnav-flyup">
               <a href="http://www.spoonflower.com/terms" class="nav-link nav-link-footer">Terms</a>
+              <button class="btn-open-subnav" aria-label="Toggle submenu"></button>
               <ul class="subnav subnav-flyup">
                 <li>
                   <a href="http://www.spoonflower.com/seller_agreement" class="nav-link">Seller Agreement</a>
